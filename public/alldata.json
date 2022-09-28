@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "time": "1",
+    "img": "https://res.cloudinary.com/dwac7hlfp/image/upload/v1664388236/assigment-8/1-sukhasana_mg4fqm.jpg",
+    "name": "SUKHASANA",
+    "details": "Helps the spine to align itself due to which the shoulders come into a proper position naturally and hence provides you with a good posture."
+  },
+  {
+    "id": "2",
+    "time": "2",
+    "img": "https://res.cloudinary.com/dwac7hlfp/image/upload/v1664388246/assigment-8/2-PARIVRITTA_SUKHASANA_mdqpnz.jpg",
+    "name": "PARIVRTTA SUKHASANA",
+    "details": "Twisting poses compress the internal organs, releasing toxins and cleansing the body. Twists are beneficial for abdominal health. "
+  },
+  {
+    "id": "3",
+    "time": "1",
+    "img": "https://res.cloudinary.com/dwac7hlfp/image/upload/v1664388238/assigment-8/3-Baddha-Konasana_s4ajkg.jpg",
+    "name": "BADDHA KONASANA",
+    "details": "Practising this pose improves blood circulation and stimulates the heart. Supta Baddha Konasana benefits your pelvic region, inner thighs, and your knees to get a very necessary and good stretch."
+  },
+  {
+    "id": "4",
+    "price": "2",
+    "img": "https://res.cloudinary.com/dwac7hlfp/image/upload/v1664388237/assigment-8/4-Cat-Cow-Pose_vz5wa7.png",
+    "name": "BIDALASANA",
+    "details": "It is very good for the spine as it stretches the backbone and strengthens it while also improving its flexibility. The asana strengthens your wrists."
+  },
+  {
+    "id": "5",
+    "price": "4",
+    "img": "https://res.cloudinary.com/dwac7hlfp/image/upload/v1664388242/assigment-8/5-q3_l1hbbe.jpg",
+    "name": "TRIANGLE",
+    "details": "A pose with 'warrior' in its name may not sound very zen, but this standing pose can help calm and steady your mind. Tougher than it looks, it also strengthens your legs and ankles and increases stamina."
+  },
+  {
+    "id": "6",
+    "price": "6",
+    "img": "https://res.cloudinary.com/dwac7hlfp/image/upload/v1664388237/assigment-8/6-q4_klfhxy.jpg",
+    "name": " Vrksasana VRKSASANA",
+    "details": "While this pose can be challenging for inflexible people, it will help promote balance, stretch the hamstrings and inner thighs, and create a feeling of expansion in the body."
+  }
+]
