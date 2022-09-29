@@ -1,17 +1,25 @@
+import { faClose } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import "./Exercise.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Exercise = ({ addActivity, tenTime }) => {
   const [tost, setTost] = useState("");
   let sum = addActivity.reduce((p, c) => {
     return p + c;
   }, 0);
-  
+  const handleTost = () => {
+    toast.success("All Activity Completed", {
+      position: "top-center",
+    });
+  };
 
   return (
     <div>
+      <ToastContainer />
       <div className="mt-5 mb-4">
-        {tost}
         <h1 className="font-semibold text-[25px]">Exercise Details</h1>
         <div className="my-5">
           <div className="flex justify-around bg-slate-300 py-3 text-black align-middle rounded-lg">
