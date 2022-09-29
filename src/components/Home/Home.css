@@ -13,5 +13,7 @@
   margin: 0px auto;
 }
 .yoga-details-right {
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  background-color: #0d0e34;
+  border-radius: 12px;
 }
