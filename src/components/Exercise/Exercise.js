@@ -22,7 +22,7 @@ const Exercise = () => {
           </div>
         </div>
         <button className="btn  btn-secondary w-[100%] font-semibold tracking-wide btn-outline">
-          Activity Completedd
+          Activity Completed
         </button>
       </div>
     </div>
