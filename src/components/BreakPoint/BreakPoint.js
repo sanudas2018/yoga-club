@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./BreakPoint.css";
 
 const BreakPoint = ({ breakPointTime }) => {
+  // console.log(breakPointTime);
   return (
     <div>
       <div className="mt-4">
@@ -11,9 +12,9 @@ const BreakPoint = ({ breakPointTime }) => {
           <div className="btn-group btn-group-vertical lg:btn-group-horizontal flex justify-around ">
             <button
               className="btn text-[25px] btn-rounded "
-              name="10"
-              value="value"
-              id="10"
+              name="timeCount"
+              value="10"
+              id="1"
               onClick={(e) => breakPointTime(e)}
             >
               10
@@ -21,36 +22,36 @@ const BreakPoint = ({ breakPointTime }) => {
             </button>
             <button
               className="btn  btn-active text-[25px] btn-rounded"
-              name="20"
-              value="value"
-              id="20"
+              name="timeCount"
+              value="20"
+              id="2"
               onClick={(e) => breakPointTime(e)}
             >
               20<span className="text-[15px] mt-2">s</span>
             </button>
             <button
               className="btn  text-[25px] btn-rounded"
-              name="30"
-              value="value"
-              id="30"
+              name="timeCount"
+              value="30"
+              id="3"
               onClick={(e) => breakPointTime(e)}
             >
               30<span className="text-[15px] mt-2">s</span>
             </button>
             <button
               className="btn text-[25px] btn-rounded"
-              name="40"
-              value="value"
-              id="40"
+              name="timeCount"
+              value="40"
+              id="4"
               onClick={(e) => breakPointTime(e)}
             >
               40<span className="text-[15px] mt-2">s</span>
             </button>
             <button
               className="btn  text-[25px] btn-rounded"
-              name="50"
-              value="value"
-              id="50"
+              name="timeCount"
+              value="50"
+              id="5"
               onClick={(e) => breakPointTime(e)}
             >
               50<span className="text-[15px] mt-2">s</span>

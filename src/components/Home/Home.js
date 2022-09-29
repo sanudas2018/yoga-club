@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { addToDb, getStoredCart } from "../../utilities/localStorage";
 import Activity from "../Activity/Activity";
 import BreakPoint from "../BreakPoint/BreakPoint";
 import Exercise from "../Exercise/Exercise";
 import PersonalInfo from "../PersonalInfo/PersonalInfo";
+
 import "./Home.css";
 
 const Home = () => {
@@ -12,6 +14,7 @@ const Home = () => {
   const [tenTime, setTenTime] = useState({
     name: " ",
   });
+  // console.log(tenTime);
 
   useEffect(() => {
     // const url = `../../../public/alldata.json`;
@@ -25,12 +28,19 @@ const Home = () => {
 
     setAddActivity(newActivity);
   };
-
+  addToDb(tenTime.timeCount);
+  // useEffect(() => {
+  //   const storedCartLocal = getStoredCart();
+  //   for (const id in storedCartLocal) {
+  //     const addedActivity = tenTime.find((active) => active.timeCount === id);
+  //     console.log(addedActivity);
+  //   }
+  // }, []);
   // >>>>>>>>>>>
 
   const breakPointTime = (e) => {
     setTenTime((current) => {
-      return { ...current, [e.target.value]: e.target.name };
+      return { ...current, [e.target.name]: e.target.value };
     });
   };
 
