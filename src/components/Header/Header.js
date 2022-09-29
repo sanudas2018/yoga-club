@@ -18,10 +18,7 @@ const Header = () => {
           {/* <!-- menu bar end  -->
         <!-- mobile device e hand bars  --> */}
           <div className="dropdown dropdown-end">
-            <label
-              tabindex="0"
-              className="btn btn-ghost btn-circle avatar block lg:hidden md:hidden"
-            >
+            <label className="btn btn-ghost btn-circle avatar block lg:hidden md:hidden">
               <i className="fa-solid fa-bars text-white text-xl"></i>
             </label>
             {/* ul section  */}
