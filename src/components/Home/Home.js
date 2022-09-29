@@ -8,6 +8,11 @@ import "./Home.css";
 const Home = () => {
   const [activities, setActivities] = useState([]);
   const [addActivity, setAddActivity] = useState([]);
+  // >>>>>
+  const [tenTime, setTenTime] = useState({
+    name: " ",
+  });
+
   useEffect(() => {
     // const url = `../../../public/alldata.json`;
     fetch("alldata.json")
@@ -17,10 +22,18 @@ const Home = () => {
 
   const handleActivity = (activity) => {
     let newActivity = [...addActivity, activity.time];
-    console.log(newActivity);
 
     setAddActivity(newActivity);
   };
+
+  // >>>>>>>>>>>
+
+  const breakPointTime = (e) => {
+    setTenTime((current) => {
+      return { ...current, [e.target.value]: e.target.name };
+    });
+  };
+
   return (
     <div className="home">
       <div className="yoga-container mb-10 relative">
@@ -40,8 +53,8 @@ const Home = () => {
         </div>
         <div className="yoga-details-right px-2 fixed lg:top-24 right-0  w-[22%]  md:w-[25%] lg:w-[25%] md:right-0 lg:px-4">
           <PersonalInfo></PersonalInfo>
-          <BreakPoint></BreakPoint>
-          <Exercise addActivity={addActivity}></Exercise>
+          <BreakPoint breakPointTime={breakPointTime}></BreakPoint>
+          <Exercise addActivity={addActivity} tenTime={tenTime}></Exercise>
         </div>
       </div>
     </div>

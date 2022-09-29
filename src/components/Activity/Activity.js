@@ -6,7 +6,7 @@ const Activity = ({ activity, handleActivity }) => {
 
   return (
     <>
-      <div className="card card-compact bg-base-100 shadow-xl">
+      <div className="card card-compact bg-base-100 shadow-xl glass">
         <figure>
           <img className="h-40 w-[100%]" src={img} alt="Shoes" />
         </figure>
